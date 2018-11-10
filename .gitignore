@@ -1,0 +1,8 @@
+packages/
+.vs/
+grid-client/bin/
+obj/
+grid-shared/bin/
+grid-task-lib/bin/
+grid-worker/bin/
+grid-worker/bin_worker_2/

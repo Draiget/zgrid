@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C816F9A1-16B2-4233-A04D-B258DD505C95}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>grid_shared</RootNamespace>
+    <AssemblyName>grid-shared</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Crc32.NET, Version=1.0.0.0, Culture=neutral, PublicKeyToken=dc0b95cf99bf4e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\Crc32.NET.1.2.0\lib\net20\Crc32.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="grid\commands\IConsoleCommand.cs" />
+    <Compile Include="grid\modules\ModuleLoader.cs" />
+    <Compile Include="grid\network\GridNetworkSystemBase.cs" />
+    <Compile Include="grid\network\handlers\INetHandlerFiles.cs" />
+    <Compile Include="grid\network\handlers\INetHandlerWorkerClient.cs" />
+    <Compile Include="grid\network\handlers\INetHandlerWorkerServer.cs" />
+    <Compile Include="grid\network\handlers\PacketsRegistry.cs" />
+    <Compile Include="grid\network\IPacket.cs" />
+    <Compile Include="grid\network\IPacketHandler.cs" />
+    <Compile Include="grid\network\PacketBuffer.cs" />
+    <Compile Include="grid\network\packets\PacketWorkerDisconnect.cs" />
+    <Compile Include="grid\network\packets\PacketWorkerFileData.cs" />
+    <Compile Include="grid\network\packets\PacketWorkerFileRequest.cs" />
+    <Compile Include="grid\network\packets\PacketWorkerResponseStatus.cs" />
+    <Compile Include="grid\network\packets\PacketWorkerTaskCancel.cs" />
+    <Compile Include="grid\network\packets\PacketWorkerTaskFinish.cs" />
+    <Compile Include="grid\network\packets\PacketWorkerTaskRequest.cs" />
+    <Compile Include="grid\network\packets\PacketWorkerTaskResponse.cs" />
+    <Compile Include="grid\network\packets\PacketWorkerLoginRequest.cs" />
+    <Compile Include="grid\network\packets\PacketWorkerLoginResponse.cs" />
+    <Compile Include="grid\network\packets\PacketWorkerRequestStatus.cs" />
+    <Compile Include="grid\tasks\EGridJobFileDirection.cs" />
+    <Compile Include="grid\tasks\EGridJobFileShare.cs" />
+    <Compile Include="grid\tasks\GridJob.cs" />
+    <Compile Include="grid\tasks\GridJobFile.cs" />
+    <Compile Include="grid\tasks\GridJobFileLink.cs" />
+    <Compile Include="grid\tasks\GridJobModule.cs" />
+    <Compile Include="grid\tasks\EGridJobTaskState.cs" />
+    <Compile Include="grid\tasks\GridJobTask.cs" />
+    <Compile Include="grid\tasks\GridTaskExecutor.cs" />
+    <Compile Include="grid\tasks\GridIo.cs" />
+    <Compile Include="grid\utils\CryptoUtils.cs" />
+    <Compile Include="grid\utils\StringUtils.cs" />
+    <Compile Include="grid\utils\VersionUtils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="grid\network\attributes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

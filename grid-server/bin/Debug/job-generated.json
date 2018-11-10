@@ -1,0 +1,331 @@
+{
+  "JobOutFile": {
+    "ShareMode": 0,
+    "Direction": 1,
+    "FileName": "strs-count.txt",
+    "CheckSum": 0
+  },
+  "JobFiles": [
+    {
+      "ShareMode": 0,
+      "Direction": 0,
+      "FileName": "grid-task-lib.dll",
+      "CheckSum": 3344028959
+    },
+    {
+      "ShareMode": 0,
+      "Direction": 0,
+      "FileName": "loadscr.gmserver.ru.log",
+      "CheckSum": 3322960363
+    },
+    {
+      "ShareMode": 1,
+      "Direction": 1,
+      "FileName": "strs-count.txt",
+      "CheckSum": 0
+    }
+  ],
+  "Name": "string-find-job-1",
+  "JobTasks": [
+    {
+      "TaskId": 0,
+      "Arguments": [
+        "loadscr.gmserver.ru.log",
+        "0",
+        "614400",
+        "strs-count.txt",
+        "76561198357644316"
+      ],
+      "ModuleFileRef": {
+        "FileName": "grid-task-lib.dll",
+        "CheckSum": 3344028959
+      },
+      "ReferencedFiles": [
+        {
+          "FileName": "loadscr.gmserver.ru.log",
+          "CheckSum": 3322960363
+        }
+      ]
+    },
+    {
+      "TaskId": 1,
+      "Arguments": [
+        "loadscr.gmserver.ru.log",
+        "614400",
+        "1228800",
+        "strs-count.txt",
+        "76561198357644316"
+      ],
+      "ModuleFileRef": {
+        "FileName": "grid-task-lib.dll",
+        "CheckSum": 3344028959
+      },
+      "ReferencedFiles": [
+        {
+          "FileName": "loadscr.gmserver.ru.log",
+          "CheckSum": 3322960363
+        }
+      ]
+    },
+    {
+      "TaskId": 2,
+      "Arguments": [
+        "loadscr.gmserver.ru.log",
+        "1228800",
+        "1843200",
+        "strs-count.txt",
+        "76561198357644316"
+      ],
+      "ModuleFileRef": {
+        "FileName": "grid-task-lib.dll",
+        "CheckSum": 3344028959
+      },
+      "ReferencedFiles": [
+        {
+          "FileName": "loadscr.gmserver.ru.log",
+          "CheckSum": 3322960363
+        }
+      ]
+    },
+    {
+      "TaskId": 3,
+      "Arguments": [
+        "loadscr.gmserver.ru.log",
+        "1843200",
+        "2457600",
+        "strs-count.txt",
+        "76561198357644316"
+      ],
+      "ModuleFileRef": {
+        "FileName": "grid-task-lib.dll",
+        "CheckSum": 3344028959
+      },
+      "ReferencedFiles": [
+        {
+          "FileName": "loadscr.gmserver.ru.log",
+          "CheckSum": 3322960363
+        }
+      ]
+    },
+    {
+      "TaskId": 4,
+      "Arguments": [
+        "loadscr.gmserver.ru.log",
+        "2457600",
+        "3072000",
+        "strs-count.txt",
+        "76561198357644316"
+      ],
+      "ModuleFileRef": {
+        "FileName": "grid-task-lib.dll",
+        "CheckSum": 3344028959
+      },
+      "ReferencedFiles": [
+        {
+          "FileName": "loadscr.gmserver.ru.log",
+          "CheckSum": 3322960363
+        }
+      ]
+    },
+    {
+      "TaskId": 5,
+      "Arguments": [
+        "loadscr.gmserver.ru.log",
+        "3072000",
+        "3686400",
+        "strs-count.txt",
+        "76561198357644316"
+      ],
+      "ModuleFileRef": {
+        "FileName": "grid-task-lib.dll",
+        "CheckSum": 3344028959
+      },
+      "ReferencedFiles": [
+        {
+          "FileName": "loadscr.gmserver.ru.log",
+          "CheckSum": 3322960363
+        }
+      ]
+    },
+    {
+      "TaskId": 6,
+      "Arguments": [
+        "loadscr.gmserver.ru.log",
+        "3686400",
+        "4300800",
+        "strs-count.txt",
+        "76561198357644316"
+      ],
+      "ModuleFileRef": {
+        "FileName": "grid-task-lib.dll",
+        "CheckSum": 3344028959
+      },
+      "ReferencedFiles": [
+        {
+          "FileName": "loadscr.gmserver.ru.log",
+          "CheckSum": 3322960363
+        }
+      ]
+    },
+    {
+      "TaskId": 7,
+      "Arguments": [
+        "loadscr.gmserver.ru.log",
+        "4300800",
+        "4915200",
+        "strs-count.txt",
+        "76561198357644316"
+      ],
+      "ModuleFileRef": {
+        "FileName": "grid-task-lib.dll",
+        "CheckSum": 3344028959
+      },
+      "ReferencedFiles": [
+        {
+          "FileName": "loadscr.gmserver.ru.log",
+          "CheckSum": 3322960363
+        }
+      ]
+    },
+    {
+      "TaskId": 8,
+      "Arguments": [
+        "loadscr.gmserver.ru.log",
+        "4915200",
+        "5529600",
+        "strs-count.txt",
+        "76561198357644316"
+      ],
+      "ModuleFileRef": {
+        "FileName": "grid-task-lib.dll",
+        "CheckSum": 3344028959
+      },
+      "ReferencedFiles": [
+        {
+          "FileName": "loadscr.gmserver.ru.log",
+          "CheckSum": 3322960363
+        }
+      ]
+    },
+    {
+      "TaskId": 9,
+      "Arguments": [
+        "loadscr.gmserver.ru.log",
+        "5529600",
+        "6144000",
+        "strs-count.txt",
+        "76561198357644316"
+      ],
+      "ModuleFileRef": {
+        "FileName": "grid-task-lib.dll",
+        "CheckSum": 3344028959
+      },
+      "ReferencedFiles": [
+        {
+          "FileName": "loadscr.gmserver.ru.log",
+          "CheckSum": 3322960363
+        }
+      ]
+    },
+    {
+      "TaskId": 10,
+      "Arguments": [
+        "loadscr.gmserver.ru.log",
+        "6144000",
+        "6758400",
+        "strs-count.txt",
+        "76561198357644316"
+      ],
+      "ModuleFileRef": {
+        "FileName": "grid-task-lib.dll",
+        "CheckSum": 3344028959
+      },
+      "ReferencedFiles": [
+        {
+          "FileName": "loadscr.gmserver.ru.log",
+          "CheckSum": 3322960363
+        }
+      ]
+    },
+    {
+      "TaskId": 11,
+      "Arguments": [
+        "loadscr.gmserver.ru.log",
+        "6758400",
+        "7372800",
+        "strs-count.txt",
+        "76561198357644316"
+      ],
+      "ModuleFileRef": {
+        "FileName": "grid-task-lib.dll",
+        "CheckSum": 3344028959
+      },
+      "ReferencedFiles": [
+        {
+          "FileName": "loadscr.gmserver.ru.log",
+          "CheckSum": 3322960363
+        }
+      ]
+    },
+    {
+      "TaskId": 12,
+      "Arguments": [
+        "loadscr.gmserver.ru.log",
+        "7372800",
+        "7987200",
+        "strs-count.txt",
+        "76561198357644316"
+      ],
+      "ModuleFileRef": {
+        "FileName": "grid-task-lib.dll",
+        "CheckSum": 3344028959
+      },
+      "ReferencedFiles": [
+        {
+          "FileName": "loadscr.gmserver.ru.log",
+          "CheckSum": 3322960363
+        }
+      ]
+    },
+    {
+      "TaskId": 13,
+      "Arguments": [
+        "loadscr.gmserver.ru.log",
+        "7987200",
+        "8601600",
+        "strs-count.txt",
+        "76561198357644316"
+      ],
+      "ModuleFileRef": {
+        "FileName": "grid-task-lib.dll",
+        "CheckSum": 3344028959
+      },
+      "ReferencedFiles": [
+        {
+          "FileName": "loadscr.gmserver.ru.log",
+          "CheckSum": 3322960363
+        }
+      ]
+    },
+    {
+      "TaskId": 14,
+      "Arguments": [
+        "loadscr.gmserver.ru.log",
+        "8601600",
+        "17259698",
+        "strs-count.txt",
+        "76561198357644316"
+      ],
+      "ModuleFileRef": {
+        "FileName": "grid-task-lib.dll",
+        "CheckSum": 3344028959
+      },
+      "ReferencedFiles": [
+        {
+          "FileName": "loadscr.gmserver.ru.log",
+          "CheckSum": 3322960363
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+bin/Debug/logs/
+bin/Debug/modules/
+bin/Debug/jobs_temp/
+bin/Debug/*.exe
+bin/Debug/*.pdb
+bin/Debug/*.dll
+bin/Debug/*.xml

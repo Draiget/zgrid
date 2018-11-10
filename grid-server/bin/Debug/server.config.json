@@ -1,0 +1,5 @@
+{
+  "BindPort": 3045,
+  "BindAddress": "0.0.0.0",
+  "ReceiveTimeout": 3000
+}
